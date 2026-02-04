@@ -1,5 +1,5 @@
 ---
-author: Sat Naing
+author: Celesto AI
 pubDatetime: 2022-09-25T15:20:35Z
 modDatetime: 2026-01-09T15:00:15.170Z
 title: Customizing AstroPaper theme color schemes
@@ -38,7 +38,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Suggest Changes",
-    url: "https://github.com/satnaing/astro-paper/edit/main/",
+    url: "https://github.com/CelestoAI/paper-blog/edit/main/",
   },
   dynamicOgImage: true,
   lang: "en", // html lang code. Set this empty and default will be "en"

@@ -24,7 +24,7 @@ You can get around this by having a `hooks` directory and manually copy them to 
 
 As this project uses npm, we are able to make use of a package called [Husky](https://typicode.github.io/husky/) (this is already installed in AstroPaper) to automatically install the hooks for us.
 
-> Update! In AstroPaper [v4.3.0](https://github.com/satnaing/astro-paper/releases/tag/v4.3.0), the pre-commit hook has been removed in favor of GitHub Actions. However, you can easily [install Husky](https://typicode.github.io/husky/get-started.html) yourself.
+> Update! In AstroPaper [v4.3.0](https://github.com/CelestoAI/paper-blog/releases/tag/v4.3.0), the pre-commit hook has been removed in favor of GitHub Actions. However, you can easily [install Husky](https://typicode.github.io/husky/get-started.html) yourself.
 
 ## The Hook
 
@@ -130,10 +130,10 @@ We could use the `a` variable to switch inside the loop and either update the `m
 
 ## Populating the frontmatter
 
-If your IDE supports snippets then there is the option to create a custom snippet to populate the frontmatter.[In AstroPaper v4 will come with one for VSCode by default.](https://github.com/satnaing/astro-paper/pull/206)
+If your IDE supports snippets then there is the option to create a custom snippet to populate the frontmatter.[In AstroPaper v4 will come with one for VSCode by default.](https://github.com/CelestoAI/paper-blog/pull/206)
 
 <video autoplay muted="muted" controls plays-inline="true" class="border border-skin-line">
-  <source src="https://github.com/satnaing/astro-paper/assets/17761689/e13babbc-2d78-405d-8758-ca31915e41b0" type="video/mp4">
+  <source src="https://github.com/CelestoAI/paper-blog/assets/17761689/e13babbc-2d78-405d-8758-ca31915e41b0" type="video/mp4">
 </video>
 
 ## Empty `modDatetime` changes

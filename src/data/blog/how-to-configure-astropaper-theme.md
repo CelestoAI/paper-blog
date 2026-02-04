@@ -1,5 +1,5 @@
 ---
-author: Sat Naing
+author: Celesto AI
 pubDatetime: 2022-09-23T04:58:53Z
 modDatetime: 2026-01-10T13:04:53.851Z
 title: How to configure AstroPaper theme
@@ -39,7 +39,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Suggest Changes",
-    url: "https://github.com/satnaing/astro-paper/edit/main/",
+    url: "https://github.com/CelestoAI/paper-blog/edit/main/",
   },
   dynamicOgImage: true, // enable automatic dynamic og-image generation
   dir: "ltr", // "rtl" | "auto"
@@ -165,7 +165,7 @@ You can configure social links in `SOCIALS` object inside `constants.ts`.
 export const SOCIALS = [
   {
     name: "GitHub",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/CelestoAI/paper-blog",
     linkTitle: ` ${SITE.title} on GitHub`,
     icon: IconGitHub,
   },

@@ -1,5 +1,5 @@
 ---
-author: Sat Naing
+author: Celesto AI
 pubDatetime: 2022-09-26T12:13:24Z
 modDatetime: 2024-01-04T09:09:06Z
 title: Predefined color schemes
@@ -144,7 +144,7 @@ html[data-theme="dark"] {
 
 ### Astro Deep Purple (New dark theme in AstroPaper 3)
 
-![AstroPaper v3 new theme](https://github.com/satnaing/astro-paper/assets/53733092/c8b5d7e1-a3bc-4852-a5ad-4abf7b3cec79)
+![AstroPaper v3 new theme](https://github.com/CelestoAI/paper-blog/assets/53733092/c8b5d7e1-a3bc-4852-a5ad-4abf7b3cec79)
 
 ```css
 html[data-theme="dark"] {
@@ -158,7 +158,7 @@ html[data-theme="dark"] {
 
 ### AstroPaper v4 Special (New dark theme in AstroPaper 4)
 
-![AstroPaper v4 new theme](https://github.com/satnaing/astro-paper/assets/53733092/66eb74dc-7a0e-4f2e-982d-25f5c443b25a)
+![AstroPaper v4 new theme](https://github.com/CelestoAI/paper-blog/assets/53733092/66eb74dc-7a0e-4f2e-982d-25f5c443b25a)
 
 ```css
 html[data-theme="dark"] {

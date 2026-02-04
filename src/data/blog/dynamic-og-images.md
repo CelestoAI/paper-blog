@@ -1,5 +1,5 @@
 ---
-author: Sat Naing
+author: Celesto AI
 pubDatetime: 2022-12-28T04:59:04.866Z
 modDatetime: 2025-03-12T13:39:20.763Z
 title: Dynamic OG image generation in AstroPaper blog posts
@@ -77,7 +77,7 @@ async function loadGoogleFonts(
 }
 ```
 
-> Check out [this PR](https://github.com/satnaing/astro-paper/pull/318) for more info.
+> Check out [this PR](https://github.com/CelestoAI/paper-blog/pull/318) for more info.
 
 ## Trade-off
 
@@ -85,7 +85,7 @@ While this is a nice feature to have, there's a trade-off. Each OG image takes r
 
 For example: If one OG image takes one second to generate, then 60 images will take around one minute, and 600 images will take approximately 10 minutes. This can significantly impact build times as your content scales.
 
-Related issue: [#428](https://github.com/satnaing/astro-paper/issues/428)
+Related issue: [#428](https://github.com/CelestoAI/paper-blog/issues/428)
 
 ## Limitations
 

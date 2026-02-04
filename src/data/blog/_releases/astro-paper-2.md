@@ -1,5 +1,5 @@
 ---
-author: Sat Naing
+author: Celesto AI
 pubDatetime: 2023-01-30T15:57:52.737Z
 title: AstroPaper 2.0
 slug: astro-paper-2
@@ -81,7 +81,7 @@ AstroPaper 2.0 includes automatic class sorting with [TailwindCSS Prettier plugi
 
 ### Updated Docs & README
 
-All the [#docs](https://astro-paper.pages.dev/tags/docs/) blog posts and [README](https://github.com/satnaing/astro-paper#readme) are updated for this AstroPaper v2.
+All the [#docs](https://astro-paper.pages.dev/tags/docs/) blog posts and [README](https://github.com/CelestoAI/paper-blog#readme) are updated for this AstroPaper v2.
 
 ## Bug Fixes
 

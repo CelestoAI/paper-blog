@@ -1,6 +1,6 @@
 ---
 title: How Do I Develop My Terminal Portfolio Website with React
-author: Sat Naing
+author: Celesto AI
 pubDatetime: 2022-06-09T03:42:51Z
 slug: how-do-i-develop-my-terminal-portfolio-website-with-react
 featured: false

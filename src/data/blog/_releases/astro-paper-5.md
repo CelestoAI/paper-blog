@@ -17,7 +17,7 @@ At last, the long-awaited AstroPaper v5 is finally here. AstroPaper v5 keeps the
 
 ## Major Changes
 
-### Upgrade to Astro v5 [#455](https://github.com/satnaing/astro-paper/pull/455)
+### Upgrade to Astro v5 [#455](https://github.com/CelestoAI/paper-blog/pull/455)
 
 AstroPaper now comes with Astro v5, bringing all the new features and improvements that come with it.
 

@@ -1,6 +1,6 @@
 ---
 title: How to update dependencies of AstroPaper
-author: Sat Naing
+author: Celesto AI
 pubDatetime: 2023-07-20T15:33:05.569Z
 slug: how-to-update-dependencies
 featured: false
@@ -76,7 +76,7 @@ You can manually replace every file one by one, or you can use the magic of git 
 First, add astro-paper as the remote in your project.
 
 ```bash
-git remote add astro-paper https://github.com/satnaing/astro-paper.git
+git remote add astro-paper https://github.com/CelestoAI/paper-blog.git
 ```
 
 Checkout to a new branch in order to update the template. If you know what you’re doing and you’re confident with your git skill, you can omit this step.
