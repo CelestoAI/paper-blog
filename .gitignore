@@ -26,3 +26,13 @@ pnpm-debug.log*
 # pagefind
 
 public/pagefind
+
+
+
+# wrangler
+
+.assetsignore
+
+.wrangler/
+
+wrangler-*.log
