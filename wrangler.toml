@@ -1,0 +1,13 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "celesto-blog"
+main = "./dist/_worker.js/index.js"
+compatibility_date = "2026-02-04"
+
+# If you use assets in the public folder, they are handled by Astro's build
+# But for Cloudflare Workers, we define the directory for static assets.
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+
+[observability]
+enabled = true
