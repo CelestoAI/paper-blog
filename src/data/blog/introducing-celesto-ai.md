@@ -39,4 +39,4 @@ We believe that the future of AI is collaborative. We invite you to follow our j
 Stay tuned for more updates!
 
 ---
-*Follow us on [X](https://x.com/celesto_ai) and [LinkedIn](https://www.linkedin.com/company/celesto-ai) for real-time updates.*
+*Follow us on [X](https://x.com/celestoai) and [LinkedIn](https://www.linkedin.com/company/celestoai) for real-time updates.*
