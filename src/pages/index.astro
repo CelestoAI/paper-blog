@@ -12,6 +12,8 @@ import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import { SITE } from "@/config";
 import { SOCIALS } from "@/constants";
 
+export const prerender = true;
+
 const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);

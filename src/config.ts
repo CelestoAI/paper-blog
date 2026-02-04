@@ -4,7 +4,7 @@ export const SITE = {
   profile: "https://celesto.ai/",
   desc: "The official blog of Celesto AI, exploring the frontiers of artificial intelligence and machine learning.",
   title: "Celesto AI",
-  ogImage: "",
+  ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,
@@ -16,7 +16,7 @@ export const SITE = {
     text: "Edit page",
     url: "https://github.com/CelestoAI/paper-blog/edit/main/",
   },
-  dynamicOgImage: true,
+  dynamicOgImage: false,
   dir: "ltr", // "rtl" | "auto"
   lang: "en", // html lang code. Set this empty and default will be "en"
   timezone: "UTC", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones

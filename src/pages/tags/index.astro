@@ -8,6 +8,8 @@ import Footer from "@/components/Footer.astro";
 import getUniqueTags from "@/utils/getUniqueTags";
 import { SITE } from "@/config";
 
+export const prerender = true;
+
 const posts = await getCollection("blog");
 
 let tags = getUniqueTags(posts);
