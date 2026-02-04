@@ -35,7 +35,7 @@ if (breadcrumbList[0] === "blog") {
     class="font-light [&>li]:inline [&>li:not(:last-child)>a]:hover:opacity-100"
   >
     <li>
-      <a href="/blog/" class="opacity-80">Home</a>
+      <a href="/" class="opacity-80">Home</a>
       <span aria-hidden="true" class="opacity-80">&raquo;</span>
     </li>
     {
@@ -52,7 +52,7 @@ if (breadcrumbList[0] === "blog") {
           </li>
         ) : (
           <li>
-            <a href={`/blog/${breadcrumb}/`} class="capitalize opacity-70">
+            <a href={`/${breadcrumb}/`} class="capitalize opacity-70">
               {breadcrumb}
             </a>
             <span aria-hidden="true">&raquo;</span>

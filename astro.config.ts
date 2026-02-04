@@ -16,6 +16,7 @@ import { SITE } from "./src/config";
 export default defineConfig({
   site: SITE.website,
   base: "/blog",
+  trailingSlash: "always",
   output: "server",
   adapter: cloudflare(),
   integrations: [
