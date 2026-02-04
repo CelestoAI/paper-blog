@@ -44,11 +44,9 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       </a>
 
       <p>
-        Welcome to the official blog of Celesto AI. We share insights, research, 
-        and updates on the latest developments in artificial intelligence and 
-        machine learning. Join us as we explore the future of intelligent systems.
+        Welcome to the official blog of Celesto AI.
       </p>
-      <p class="mt-2">
+      <!-- <p class="mt-2">
         Learn more about our mission on the
         <LinkButton
           class="underline decoration-dashed underline-offset-4 hover:text-accent"
@@ -56,7 +54,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         >
           About
         </LinkButton> page.
-      </p>
+      </p> -->
       {
         // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
