@@ -3,9 +3,9 @@ export const SITE = {
   basePath: "/blog", // base path for all internal links (used because site is served via Vercel rewrite)
   author: "Celesto AI",
   profile: "https://celesto.ai/",
-  desc: "The official blog of Celesto AI, exploring the frontiers of artificial intelligence and machine learning.",
-  title: "Celesto AI",
-  ogImage: "astropaper-og.jpg",
+  desc: "Insights, tutorials, and updates from Celesto AI - the fastest way to deploy long-running AI agents with built-in observability and security.",
+  title: "Celesto AI Blog",
+  ogImage: "https://ik.imagekit.io/gradsflow/celestoai/logo/celesto-preview_YCCacMZkx.png?updatedAt=1758078180636",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,
