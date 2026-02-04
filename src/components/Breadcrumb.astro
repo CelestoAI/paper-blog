@@ -1,5 +1,7 @@
 ---
-const base = import.meta.env.BASE_URL;
+import { SITE } from "@/config";
+
+const base = `${SITE.basePath}/`;
 
 // Remove current url path and remove trailing slash if exists
 const currentUrlPath = Astro.url.pathname.replace(/\/+$/, "");

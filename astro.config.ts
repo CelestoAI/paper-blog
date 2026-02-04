@@ -15,7 +15,6 @@ import { SITE } from "./src/config";
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
-  base: "/blog",
   trailingSlash: "always",
   output: "server",
   adapter: cloudflare(),
