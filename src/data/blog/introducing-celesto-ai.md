@@ -2,7 +2,7 @@
 author: Celesto AI
 pubDatetime: 2026-02-04T09:00:00Z
 modDatetime: 2026-02-04T09:00:00Z
-title: Introducing Celesto AI: The Future of Intelligent Systems
+title: "Introducing Celesto AI: The Future of Intelligent Systems"
 slug: introducing-celesto-ai
 featured: true
 draft: false
