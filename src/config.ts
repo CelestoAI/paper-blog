@@ -1,5 +1,5 @@
 export const SITE = {
-  website: "https://celesto.ai/", // replace this with your deployed domain
+  website: "https://celesto.ai/blog/", // replace this with your deployed domain
   author: "Celesto AI",
   profile: "https://celesto.ai/",
   desc: "The official blog of Celesto AI, exploring the frontiers of artificial intelligence and machine learning.",
