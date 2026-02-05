@@ -1,0 +1,26 @@
+---
+import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
+
+type Props = {
+  title: string;
+  viewAllHref?: string;
+  viewAllText?: string;
+};
+
+const { title, viewAllHref, viewAllText = "View all" } = Astro.props;
+---
+
+<div class="mb-6 flex items-center justify-between">
+  <h2 class="text-sm font-semibold uppercase tracking-wider text-foreground/70">
+    {title}
+  </h2>
+  {viewAllHref && (
+    <a
+      href={viewAllHref}
+      class="group flex items-center gap-1 text-sm font-medium text-accent transition-colors hover:text-accent/80"
+    >
+      {viewAllText}
+      <IconArrowRight class="size-4 transition-transform group-hover:translate-x-0.5 rtl:-rotate-180 rtl:group-hover:-translate-x-0.5" />
+    </a>
+  )}
+</div>

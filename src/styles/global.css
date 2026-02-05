@@ -10,6 +10,7 @@ html[data-theme="light"] {
   --accent: #006cac;
   --muted: #e6e6e6;
   --border: #ece9e9;
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
 }
 
 html[data-theme="dark"] {
@@ -18,10 +19,12 @@ html[data-theme="dark"] {
   --accent: #ff6b01;
   --muted: #343f60;
   --border: #ab4b08;
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3);
 }
 
 @theme inline {
-  --font-app: var(--font-google-sans-code);
+  --font-sans: var(--font-google-sans-code);
+  --font-mono: var(--font-google-sans-code);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
@@ -39,7 +42,7 @@ html[data-theme="dark"] {
     @apply overflow-y-scroll scroll-smooth;
   }
   body {
-    @apply flex min-h-svh flex-col bg-background font-app text-foreground selection:bg-accent/75 selection:text-background;
+    @apply flex min-h-svh flex-col bg-background font-sans text-foreground selection:bg-accent/75 selection:text-background;
   }
   a,
   button {
@@ -67,4 +70,36 @@ html[data-theme="dark"] {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.4s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in,
+  .animate-slide-up {
+    animation: none;
+  }
 }
