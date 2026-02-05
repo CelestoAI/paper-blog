@@ -3,14 +3,12 @@ import { getCollection } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-import Socials from "@/components/Socials.astro";
-import LinkButton from "@/components/LinkButton.astro";
+import Hero from "@/components/Hero.astro";
 import Card from "@/components/Card.astro";
+import LinkButton from "@/components/LinkButton.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
-import IconRss from "@/assets/icons/IconRss.svg";
 import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import { SITE } from "@/config";
-import { SOCIALS } from "@/constants";
 
 export const prerender = true;
 
@@ -19,52 +17,15 @@ const posts = await getCollection("blog");
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+const latestPost = sortedPosts[0];
 ---
 
 <Layout>
   <Header />
   <main id="main-content" data-layout="index" class="app-layout">
-    <section id="hero" class:list={["pt-8 pb-6", "border-b border-border"]}>
-      <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Celesto AI Blog
-      </h1>
-      <a
-        target="_blank"
-        href={`${SITE.basePath}/rss.xml`}
-        class="inline-block"
-        aria-label="rss feed"
-        title="RSS Feed"
-      >
-        <IconRss
-          width={20}
-          height={20}
-          class="scale-125 stroke-accent stroke-3 rtl:-rotate-90"
-        />
-        <span class="sr-only">RSS Feed</span>
-      </a>
+    <Hero latestPost={latestPost} />
 
-      <p>
-        Welcome to the official blog of Celesto AI.
-      </p>
-      <!-- <p class="mt-2">
-        Learn more about our mission on the
-        <LinkButton
-          class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href={`${SITE.basePath}/about/`}
-        >
-          About
-        </LinkButton> page.
-      </p> -->
-      {
-        // only display if at least one social link is enabled
-        SOCIALS.length > 0 && (
-          <div class="mt-4 flex max-sm:flex-col sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      }
-    </section>
+    <div class="border-b border-border" />
 
     {
       featuredPosts.length > 0 && (
@@ -77,8 +38,8 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         >
           <h2 class="text-2xl font-semibold tracking-wide">Featured</h2>
           <ul>
-            {featuredPosts.map(data => (
-              <Card variant="h3" {...data} />
+            {featuredPosts.map(post => (
+              <Card variant="h3" {...post} />
             ))}
           </ul>
         </section>
@@ -91,8 +52,8 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
           <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
           <ul>
             {recentPosts.map(
-              (data, index) =>
-                index < SITE.postPerIndex && <Card variant="h3" {...data} />
+              (post, index) =>
+                index < SITE.postPerIndex && <Card variant="h3" {...post} />
             )}
           </ul>
         </section>
