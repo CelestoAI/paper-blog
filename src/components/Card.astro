@@ -17,10 +17,10 @@ const readingTime = body ? getReadingTime(body) : 1;
 const postUrl = getPath(id, filePath);
 ---
 
-<li class="group list-none">
+<li class="group h-full list-none">
   <article
     class:list={[
-      "relative rounded-lg border border-border bg-background p-5",
+      "relative h-full rounded-lg border border-border bg-background p-5",
       "transition-all duration-200",
       "hover:border-accent hover:shadow-[var(--card-shadow)]",
       "animate-fade-in",
