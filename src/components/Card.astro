@@ -2,65 +2,32 @@
 import type { CollectionEntry } from "astro:content";
 import { slugifyStr } from "@/utils/slugify";
 import { getPath } from "@/utils/getPath";
-import { getReadingTime } from "@/utils/getReadingTime";
-import TagPill from "./TagPill.astro";
-import IconClock from "@/assets/icons/IconClock.svg";
+import Datetime from "./Datetime.astro";
 
 type Props = {
   variant?: "h2" | "h3";
 } & CollectionEntry<"blog">;
 
-const { variant: Heading = "h2", id, data, body, filePath } = Astro.props;
-const { title, description, tags } = data;
+const { variant: Heading = "h2", id, data, filePath } = Astro.props;
 
-const readingTime = body ? getReadingTime(body) : 1;
-const postUrl = getPath(id, filePath);
+const { title, description, ...props } = data;
 ---
 
-<li class="group h-full list-none">
-  <article
+<li class="my-6">
+  <a
+    href={getPath(id, filePath)}
     class:list={[
-      "relative h-full rounded-lg border border-border bg-background p-5",
-      "transition-all duration-200",
-      "hover:border-accent hover:shadow-[var(--card-shadow)]",
-      "animate-fade-in",
+      "inline-block text-lg font-medium text-accent",
+      "decoration-dashed underline-offset-4 hover:underline",
+      "focus-visible:no-underline focus-visible:underline-offset-0",
     ]}
   >
-    <!-- Full card clickable link -->
-    <a
-      href={postUrl}
-      class="absolute inset-0 z-10"
-      aria-label={`Read ${title}`}
-    >
-      <span class="sr-only">Read {title}</span>
-    </a>
-
-    <!-- Tags and reading time row -->
-    <div class="relative z-20 mb-3 flex items-center justify-between">
-      {tags && tags.length > 0 && (
-        <div class="flex flex-wrap gap-2">
-          {tags.slice(0, 2).map((tag: string) => (
-            <TagPill tag={tag} size="sm" />
-          ))}
-        </div>
-      )}
-      <div class="flex items-center gap-1.5 font-mono text-xs text-foreground/60">
-        <IconClock class="size-3.5" />
-        <span>{readingTime} min</span>
-      </div>
-    </div>
-
-    <!-- Title -->
     <Heading
-      class="text-lg font-medium text-accent transition-colors group-hover:text-accent/80"
       style={{ viewTransitionName: slugifyStr(title.replaceAll(".", "-")) }}
     >
       {title}
     </Heading>
-
-    <!-- Description -->
-    <p class="mt-2 text-sm text-foreground/70 line-clamp-2">
-      {description}
-    </p>
-  </article>
+  </a>
+  <Datetime {...props} />
+  <p>{description}</p>
 </li>

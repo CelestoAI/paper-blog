@@ -41,7 +41,7 @@ const { page, tagName } = Astro.props;
     pageDesc={`All the articles with the tag "${tagName}".`}
   >
     <h1 slot="title" transition:name={tag}>{`Tag:${tag}`}</h1>
-    <ul class="grid gap-4 sm:grid-cols-2">
+    <ul>
       {page.data.map(data => <Card {...data} />)}
     </ul>
   </Main>
