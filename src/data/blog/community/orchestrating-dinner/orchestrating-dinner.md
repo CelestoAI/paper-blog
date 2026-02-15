@@ -1,7 +1,7 @@
 ---
 author: Craig Pfeifer
 pubDatetime: 2026-02-16T12:00:00Z
-title: "Orchestrating Dinner"
+title: "Orchestrating Dinner with OpenClaw"
 description: "Build an agentic personal chef that learns your preferences over time."
 tags: ["ai-agents", "food", "orchestration", "openclaw", "agentor", "exa", "observability"]
 featured: true
